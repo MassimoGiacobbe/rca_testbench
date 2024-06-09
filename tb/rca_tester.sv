@@ -23,7 +23,7 @@ function new(virtual interface rca_if #(N) _if);
     rcov = new(_if);
 endfunction
 
-task run_test(int unsigned num_cycles)
+task run_test(int unsigned num_cycles);
 init();
 
 rcov.cov_start();

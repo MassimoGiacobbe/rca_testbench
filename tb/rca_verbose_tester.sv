@@ -7,9 +7,9 @@ class rca_verbose_tester #(
     parameter N = 4
 ) extends rca_tester #(N);
 
-in_q inq[$];
+input_t inq[$];
 
-function new(virtual interface rif #(n) _if);
+function new(virtual interface rif #(N) _if);
 super.new(_if);  //inherited Constructor
 inq ={};
 endfunction;
@@ -27,7 +27,8 @@ fork
     repeat (num_cycles) begin: driver
     @(posedge rif.clk);
     rand_rca_in();
-    inq.push_front({inputs})
+    inq.push_front({inputs});
+	end
 join
 
 rcov.cov_stop();
