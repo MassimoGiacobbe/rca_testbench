@@ -16,7 +16,7 @@ rca_verbose_tester vbs_tst;
 
 
 int unsigned test_cycles = 10;
-int unsigen err_num = 0;
+int unsigned err_num = 0;
 
 initial begin
 
@@ -25,11 +25,11 @@ initial begin
 tst=new(rif);
 vbs_tst=new(rif);
 
-\\run quiet test
+//run quiet test
 
-tst.run_test(num_cycles);
+tst.run_test(10);
 
-vbs_tst.run_test(num_cycles);
+vbs_tst.run_test(10);
 
 $display("\nTOTAL FUNCTIONAL COVERAGE: %.2f%%", tst.get_cov());
 
