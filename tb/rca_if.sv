@@ -1,6 +1,6 @@
 interface rca_if #(parameter N = 2);
 
-//interface signlas
+//interface signals
 
 logic clk; //the design is combinational and asynchronous, we use the clock to give timing to the simulation
 logic Cin;
@@ -8,23 +8,22 @@ logic [N-1:0] A;
 logic [N-1:0] B;
 logic [N-1:0] SUM;
 logic Cout;
-logic Cin;
 
-\\interface port
+//interface port
 modport rca_port(
-input A;
-input B;
-input Cin;
-output SUM;
-output Cout;
+input A,
+input B,
+input Cin,
+output SUM,
+output Cout
 );
 
 
-initial begin: initial
+initial begin: init
 clk =1'b1;
 end
 
-always #5ns begine: clk_gen
+always #5ns begin: clk_gen
 clk=~clk;
     end
-
+endinterface
