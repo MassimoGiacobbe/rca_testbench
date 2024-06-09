@@ -12,9 +12,7 @@ endfunction: get_err_num
 
 
 property SUM_result;
-   
-     @(negedge clk) 
-    
+    	@(negedge clk)
         // Calculate the expected sum and carry out
         SUM == A + B + Cin;
        // Cout == (A + B + Cin) >= (1 << N);        

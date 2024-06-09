@@ -1,5 +1,5 @@
 ../tb/rca_if.sv
-../tb/rca_if_sva.sv
+../tb/rca_if_sva.svh
 ../tb/rca_wrap.sv
 ../tb/rca_cov.sv
 ../tb/rca_tester.sv

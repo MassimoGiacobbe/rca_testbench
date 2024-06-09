@@ -1,3 +1,5 @@
+//`include "rca_if_sva.sh"
+
 interface rca_if #(parameter N = 2);
 
 //interface signals

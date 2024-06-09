@@ -1,0 +1,10 @@
+# vsim -c -do "sim.do" rca_tb 
+# Start time: 19:00:12 on Jun 09,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): ../tb/rca_tb.sv(36): (vopt-7063) Failed to find 'get_err_num' in hierarchical name 'rif.get_err_num'.
+#         Region: rca_tb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 19:00:12 on Jun 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
