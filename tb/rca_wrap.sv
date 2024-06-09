@@ -6,8 +6,7 @@ rca #(N) rca_u(
 .A       (p.A),            
 .B       (p.B),
 .SUM     (p.SUM),
-.Cout    (p.Cout),
-.Cin      (p.Cin)  
+.Cout    (p.Cout)  
 
 
 );
