@@ -1,4 +1,3 @@
-//`include "rca_if_sva.sh"
 
 interface rca_if #(parameter N = 2);
 
@@ -28,4 +27,8 @@ end
 always #5ns begin: clk_gen
 clk=~clk;
     end
+`ifndef synthesis
+`include "rca_if_sva.svh"
+`endif
+
 endinterface

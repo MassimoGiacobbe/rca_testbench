@@ -20,10 +20,10 @@ property SUM_result;
 endproperty
 
 // Assertion instantiation
-/* assert property(SUM_result);
+a_result : assert property(SUM_result);
     else begin
-	err_num++;     
-	$error("Ripple Carry Adder check failed.");
+		err_num++;     
+		$error("Ripple Carry Adder check failed.");
     end
-*/	
+	
 `endif // RCA_IF_SVA

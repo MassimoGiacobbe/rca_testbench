@@ -4,7 +4,7 @@
 
 class rca_tester #(parameter N = 4);
 
-virtual interface rca_if rif;
+virtual interface rca_if #(N) rif;
 
 typedef struct packed {
     logic[N-1:0]  A;

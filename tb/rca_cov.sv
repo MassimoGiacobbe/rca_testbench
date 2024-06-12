@@ -12,24 +12,24 @@ class rca_cov #(parameter N = 4);
     // RCA coverage
     covergroup rca_cg;
         // Cover points for inputs
-        a_cp: coverpoint rif.A iff (rif.rst_n) {
+        a_cp: coverpoint rif.A  {
             bins corner[] = {0, (1<<N)-1, (1<<(N-1))-1};
             bins others   = default;
         }
-        b_cp: coverpoint rif.B iff (rif.rst_n) {
+        b_cp: coverpoint rif.B  {
             bins corner[] = {0, (1<<N)-1, (1<<(N-1))-1};
             bins others   = default;
         }
-        cin_cp: coverpoint rif.Cin iff (rif.rst_n) {
+        cin_cp: coverpoint rif.Cin  {
             bins zero = {0};
             bins one  = {1};
         }
         
         // Cover points for outputs
-        sum_cp: coverpoint rif.SUM iff (rif.rst_n) {
+        sum_cp: coverpoint rif.SUM  {
             bins full_range[] = {[0:(1<<N)-1]};
         }
-        cout_cp: coverpoint rif.Cout iff (rif.rst_n) {
+        cout_cp: coverpoint rif.Cout  {
             bins zero = {0};
             bins one  = {1};
         }

@@ -1,5 +1,5 @@
 `include "rca_tester.sv"
-`include "rca_verbose_tester.sv"
+//`include "rca_verbose_tester.sv"
 
 
 module rca_tb;
@@ -12,7 +12,7 @@ rca_wrap #(N) rw(rif.rca_port);
 //quiet tester 
 rca_tester #(N) tst;
 //verbose tester 
-rca_verbose_tester vbs_tst;
+//rca_verbose_tester #(N) vbs_tst;
 
 
 int unsigned test_cycles = 10;
@@ -23,13 +23,13 @@ initial begin
 //testers Constructors
 
 tst=new(rif);
-vbs_tst=new(rif);
+//vbs_tst=new(rif);
 
 //run quiet test
 
 tst.run_test(10);
 
-vbs_tst.run_test(10);
+//vbs_tst.run_test(10);
 
 $display("\nTOTAL FUNCTIONAL COVERAGE: %.2f%%", tst.get_cov());
 
