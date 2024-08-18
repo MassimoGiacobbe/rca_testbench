@@ -1,0 +1,42 @@
+# vsim -c -do "sim.do" rca_tb 
+# Start time: 16:47:47 on Jun 12,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.rca_tb_sv_unit(fast)
+# Loading work.rca_tb(fast)
+# Loading work.rca_wrap(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.ripple_carry_adder(behavioral)#1
+# Loading work.rca_if(fast)
+# do sim.do
+# Error: ...
+# Error: ...
+# Error: ...
+# 
+# TOTAL FUNCTIONAL COVERAGE: 67.50%
+# ** Error: ### TEST FAILED with 3 errors
+#    Time: 120 ns  Scope: rca_tb File: ../tb/rca_tb.sv Line: 39
+# ** Note: $stop    : ../tb/rca_tb.sv(42)
+#    Time: 120 ns  Iteration: 1  Instance: /rca_tb
+# Break at ../tb/rca_tb.sv line 42
+# Stopped at ../tb/rca_tb.sv line 42
+# End time: 16:47:48 on Jun 12,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
